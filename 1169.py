@@ -15,7 +15,7 @@ diff = 2012 - age # 실제 출생 년도 구하는 식
 
 born = diff - 1900 # 1900년대생의 주민 앞 두자리 구하는 식
 
-new_born = diff - 2000
+new_born = diff - 2000 #2000년대생의 주민 앞 두자리 구하는 식
 
 if 1900 <= diff < 1999:
     print(born + 1, 1)

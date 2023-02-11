@@ -5,7 +5,6 @@ while True:
     if n < 0:
         break
 
-    else:
-        s += n
+    s += n
 
 print(s)
