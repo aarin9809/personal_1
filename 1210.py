@@ -13,35 +13,52 @@
 # sum 값을 0으로 초기화 시켜놓고, 번호를 고를때마다 sum값에다 해당 칼로리를 추가 시키는?
 # 그렇게 해서 최종적으로 print(sum)이 되게끔?
 
-a, b = input().split()
+#a, b = input().split()
 
-sum = 0
+#sum = 0
+#a = int(a)
+#b = int(b)
+
+#if a == 1:
+#    sum += 400
+#elif a == 2:
+#    sum += 340
+#elif a == 3:
+#    sum += 170
+#elif a == 4:
+#    sum += 100
+#elif a == 5:
+#    sum += 70
+#
+#if b == 1:
+#    sum += 400
+#elif b == 2:
+#    sum += 340
+#elif b == 3:
+#    sum += 170
+#elif b == 4:
+#    sum += 100
+#elif b == 5:
+#    sum += 70
+#
+#if sum > 500:
+#    print("angry")
+#else:
+#    print('no angry')
+
+a , b = input().split()
+
 a = int(a)
 b = int(b)
 
-if a == 1:
-    sum += 400
-elif a == 2:
-    sum += 340
-elif a == 3:
-    sum += 170
-elif a == 4:
-    sum += 100
-elif a == 5:
-    sum += 70
+dict = {'cheeseburger': 400, 'vegeburger': 340, 'milk':170, 'eggroll':100, 'salad':70}
 
-if b == 1:
-    sum += 400
-elif b == 2:
-    sum += 340
-elif b == 3:
-    sum += 170
-elif b == 4:
-    sum += 100
-elif b == 5:
-    sum += 70
+v = list(dict.values())
 
-if sum > 500:
-    print("angry")
+s = v[a-1] + v[b-1]
+
+
+if s > 500:
+    print('angry')
 else:
     print('no angry')
