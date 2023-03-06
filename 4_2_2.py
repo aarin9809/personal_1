@@ -5,7 +5,7 @@ def stem_leaf(lst):
     for num in range(lst):
         k = num // 10 #key(stem)
         v = num % 10  #value(leaf)
-        
+
         if k not in d:
             d[k] = [v]  #create stem and value
         else:
