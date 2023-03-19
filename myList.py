@@ -4,6 +4,10 @@ def ListSize(List):
     i = 0
     while List[i] != None:
         i+=1
+        if i == len(List):
+            break
+
+
     return i
 
 def addAt1(List, word, index):
@@ -15,9 +19,18 @@ def addAt1(List, word, index):
     List[index] = word
     #print(List)
 
+def remove(List, index):
+    size = ListSize(List)
+    i = index
+    while i < size-1:
+    #for i in range(index, size-1):
+        List[i] = List[i+1]
+        i+=1
+    List[i] = None
+
 List = []
 
-List = [None for _ in range(20)]
+List = [None for _ in range(14)]
 
 for i in range(0, 8):
     List[i] = random.randint(0,30)
@@ -80,7 +93,8 @@ addAt1(List, 'e', 0)
 #
 # List[1] = 'f'
 addAt1(List, 'f', 1)
-
+print(List)
+remove(List, 1)
 
 
 print(List)
